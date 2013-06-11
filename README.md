@@ -1,0 +1,1 @@
+# MVP for asonios an app to store iOS only apps before they launch on android
