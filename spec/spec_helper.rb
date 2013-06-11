@@ -35,4 +35,10 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+  
+  # adding answer from Bernat on SO
+  # answer url:http://stackoverflow.com/questions/8435525/where-should-i-store-methods-to-make-them-available-both-to-my-application-and-t/8953304#8953304
+  # original url: http://stackoverflow.com/questions/12240868/undefined-local-variable-or-method-root-path-hartls-tutorial-chapter-5-3-2
+  config.include Rails.application.routes.url_helpers
+
 end
