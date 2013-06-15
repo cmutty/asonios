@@ -4,9 +4,11 @@
 <ul class="apps">
   <% @apps.each do |app| %>
     <li>
-      <%= appimage_for app, size: 52 %>
+      <%= image_tag "asonios.png", size: 52 %>
       <%= link_to app.name %>
       <%= app.description %>
     </li>
   <% end %>
 </ul>
+
+<!--replaced appimage_for w/ image_tag -->
