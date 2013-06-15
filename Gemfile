@@ -13,6 +13,10 @@ group :development, :test do
   gem 'guard-spork'
 end
 
+group :development do
+  gem 'annotate', '2.5.0'
+end
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

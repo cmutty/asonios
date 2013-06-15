@@ -11,7 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130614182904) do
+ActiveRecord::Schema.define(:version => 20130615021052) do
+
+  create_table "apps", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "imageurl"
+    t.integer  "itunesid"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "apps", ["name"], :name => "index_apps_on_name"
 
   create_table "users", :force => true do |t|
     t.string   "name"

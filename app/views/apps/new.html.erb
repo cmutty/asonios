@@ -1,0 +1,22 @@
+<% provide(:title, 'Add App') %>
+<h1>Add App</h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@app) do |f| %>
+     <%= render 'shared/error_messages', object: f.object %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :description %>
+      <%= f.text_field :description %>
+
+	  <%= f.label :imageurl %>
+      <%= f.text_field :imageurl %>
+
+      <%= f.submit "Add New App", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
+
+<!--code for adding a button to add apps <%= link_to "Add New App", addapp_path, class: "btn btn-large btn-primary" %>-->

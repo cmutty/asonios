@@ -1,0 +1,12 @@
+<% provide(:title, 'All Apps') %>
+<h1>All Apps</h1>
+
+<ul class="apps">
+  <% @apps.each do |app| %>
+    <li>
+      <%= appimage_for app, size: 52 %>
+      <%= link_to app.name %>
+      <%= app.description %>
+    </li>
+  <% end %>
+</ul>
