@@ -5,10 +5,12 @@
   <% @apps.each do |app| %>
     <li>
       <%= image_tag "asonios.png", size: 52 %>
-      <%= link_to app.name %>
+      <%= link_to app.name, app %>
       <%= app.description %>
     </li>
   <% end %>
 </ul>
 
-<!--replaced appimage_for w/ image_tag -->
+<%= link_to "Add a New App", addapp_path, class: "btn btn-large btn-primary" %>
+
+<!--replaced appimage_for w/ image_tag same with show.html -->
