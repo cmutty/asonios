@@ -8,6 +8,5 @@ class CreateApps < ActiveRecord::Migration
 
       t.timestamps
     end
-    add_index :apps, [:name]
   end
 end
